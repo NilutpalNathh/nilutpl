@@ -1,4 +1,4 @@
-npimport React, {useEffect, useState} from 'react'
+import React, {useEffect, useState}  from "react";
 
 function Form() {
     const data= {name:"", email:"", password:""};

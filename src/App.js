@@ -1,12 +1,19 @@
-import './App.css';
-import Form from './Form';
+import "./App.css";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Form from "./Form";
+import Image from "./Image";
+import SearchPage from "./SearchPage";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <Form/>
-    </>
+    <div>
+      <Routes>
+        <Route path="image" element={<Image />} />
+        <Route path="form" element={<Form />} />
+        <Route path="/search/:pictureName" element={<SearchPage />} />
+      </Routes>
+    </div>
   );
-}
-
+};
 export default App;
