@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+
 const Image = () => {
   let nativage = useNavigate();
   const [Picturename, setPicturename] = useState("");
@@ -13,7 +14,7 @@ const Image = () => {
         <input
           type="text"
           onChange={(e) => setPicturename(e.target.value)}
-          size="60"
+          size="10"
         />
         <br />
         <button onClick={() => nativage(`/search/${Picturename}`)}>
